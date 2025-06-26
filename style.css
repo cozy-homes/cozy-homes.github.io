@@ -1,0 +1,158 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(120deg, #3a6186, #89253e);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.gallery {
+  padding: 2rem 1rem;
+  background: #fff;
+  box-shadow: 0 2px 8px #ddd;
+  margin: 2rem auto;
+  max-width: 1100px;
+  border-radius: 16px;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-container img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #bbb;
+  transition: transform 0.2s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+.packages {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+.package-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.package {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #bbb;
+  padding: 2rem 1.5rem;
+  min-width: 260px;
+  max-width: 320px;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-top: 5px solid #3a6186;
+}
+
+.package.gold { border-top-color: #FFD700; }
+.package.platinum { border-top-color: #e5e4e2; }
+
+.package h3 {
+  margin-top: 0;
+}
+
+.package ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.package li {
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #89253e;
+  font-weight: bold;
+}
+
+.enquiry {
+  background: #fff;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #bbb;
+}
+
+.enquiry form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.enquiry label {
+  font-weight: 600;
+}
+
+.enquiry input, .enquiry select, .enquiry textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f3f3f3;
+}
+
+.enquiry button {
+  background: linear-gradient(90deg, #3a6186, #89253e);
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.enquiry button:hover {
+  background: linear-gradient(90deg, #89253e, #3a6186);
+}
+
+#formSuccess {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+  margin-top: 2rem;
+  border-radius: 0 0 16px 16px;
+}

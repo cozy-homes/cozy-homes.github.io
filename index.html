@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Bungalows</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Luxury Bungalows Retreat</h1>
+    <p>Experience Elegance, Comfort, and Serenity</p>
+  </header>
+
+  <section class="gallery">
+    <h2>Our Premium Bungalows</h2>
+    <div class="gallery-container">
+      <img src="images/bungalow1.jpg" alt="Bungalow 1">
+      <img src="images/bungalow2.jpg" alt="Bungalow 2">
+      <img src="images/bungalow3.jpg" alt="Bungalow 3">
+    </div>
+  </section>
+
+  <section class="packages">
+    <h2>Premium Packages</h2>
+    <div class="package-list">
+      <div class="package">
+        <h3>Silver Package</h3>
+        <ul>
+          <li>2 Nights Stay</li>
+          <li>Breakfast Included</li>
+          <li>Private Pool Access</li>
+        </ul>
+        <span class="price">₹45,000</span>
+      </div>
+      <div class="package gold">
+        <h3>Gold Package</h3>
+        <ul>
+          <li>3 Nights Stay</li>
+          <li>All Meals Included</li>
+          <li>Spa & Wellness Session</li>
+          <li>Private Pool Access</li>
+        </ul>
+        <span class="price">₹55,000</span>
+      </div>
+      <div class="package platinum">
+        <h3>Platinum Package</h3>
+        <ul>
+          <li>5 Nights Stay</li>
+          <li>All Meals & Drinks Included</li>
+          <li>Luxury Car Pickup</li>
+          <li>Private Chef & Butler</li>
+          <li>Private Pool & Jacuzzi</li>
+        </ul>
+        <span class="price">₹75,000</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="enquiry">
+    <h2>Enquire Now</h2>
+    <form id="enquiryForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="package">Interested Package</label>
+      <select id="package" name="package" required>
+        <option value="">Select Package</option>
+        <option value="Silver">Silver</option>
+        <option value="Gold">Gold</option>
+        <option value="Platinum">Platinum</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Submit Enquiry</button>
+    </form>
+    <div id="formSuccess" class="hidden">Thank you for your enquiry! We'll get back to you soon.</div>
+  </section>
+
+  <footer>
+    &copy; 2025 Cozy Homes. Luxury Bungalows Retreat. All rights reserved.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
